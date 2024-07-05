@@ -21,7 +21,7 @@ export class HttpService {
     .pipe(catchError(this.handleError));
   }
 
-  //GET request to get an employee by ID
+  //GET request to get an employees by ID
   getEmployeeById(id: number)
   {
     return this.http.get(this.url + "/employee/" + id, {observe: "response"});
